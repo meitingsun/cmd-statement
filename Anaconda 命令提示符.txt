@@ -1,0 +1,22 @@
+
+一、anaconda
+1、检测anaconda环境是否安装成功：conda --version
+2、更新所有包：conda upgrade --all
+
+二、管理包
+1、安装包：pip install numpy（安装指定包版本：pip install numpy=1.10）
+2、卸载包：pip uninstall numpy
+3、搜索包：conda search numpy
+4、更新所有包：conda upgrade numpy
+5、查看安装了哪些包：conda list
+
+
+三、管理环境
+1、列出环境：conda info --envs
+2、创建环境：conda create -n env_name(环境名)  list-packages
+例：创建名为my_env的环境并在其中安装numpy，请键入：conda create -n my_env numpy
+3、创建具有特定python版本的环境：conda create -n env_name(环境名)  python =2.X/3.X
+4、进入环境：activate env_name(环境名)---->进入后，在终端提示符中看到环境名称
+5、离开环境：deactivate
+6、删除环境：conda env remove -n env_name
+
